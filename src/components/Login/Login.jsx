@@ -15,7 +15,7 @@ const Login = () => {
 
   useEffect(() => {
     // user의 로그인 정보가 담긴 파일을 불러옴
-    fetch('./data/userData.json')
+    fetch('http://grxxn/github.io/wanted-pre-onboarding-fe/data/userData.json')
       .then((res) => res.json())
       .then((data) => setUserData(data));
   }, []);
