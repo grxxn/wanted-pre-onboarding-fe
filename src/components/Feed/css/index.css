@@ -1,0 +1,137 @@
+/* feed.css */
+/* Desktop version */
+.feed {
+  width: 100%;
+  max-width: 430px;
+  border: 1px solid #efefef;
+  background-color: #fff;
+  margin: 0 auto 30px;
+}
+.feed:last-child {
+  margin-bottom: 0;
+}
+.feed-user-box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+}
+.feed-user-info {
+  display: flex;
+  align-items: center;
+}
+.feed-user-img {
+  width: 40px;
+  height: 40px;
+  background-color: #aaa;
+  border-radius: 50%;
+  overflow: hidden;
+  margin-right: 10px;
+}
+.feed-user-id {
+  font-size: 14px;
+  font-weight: 700;
+}
+.feed-user-menu {
+  cursor: pointer;
+}
+.feed-content-img {
+  width: 100%;
+  height: auto;
+}
+.feed-content-infobox {
+  padding: 10px;
+}
+.feed-content-info-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 18px;
+}
+.feed-content-res {
+  display: flex;
+  align-items: center;
+}
+.feed-content-res li {
+  font-size: 25px;
+  margin-right: 16px;
+  cursor: pointer;
+}
+.feed-content-res li:last-child {
+  margin-right: 0;
+}
+.feed-content-bookmark {
+  font-size: 25px;
+  cursor: pointer;
+}
+.feed-content-info-mid {
+  font-size: 14px;
+  margin-bottom: 21px;
+}
+.feed-reply-list {
+  margin-bottom: 10px;
+}
+.feed-reply {
+  margin-bottom: 7px;
+  font-size: 13px;
+}
+.reply-user {
+  font-weight: 700;
+  margin-right: 10px;
+}
+.feed-form {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 40px;
+  background-color: #fff;
+  border-top: 1px solid #efefef;
+}
+.feed-form button {
+  background-color: #fff;
+}
+.feed-form-emoji {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 25px;
+  cursor: pointer;
+}
+#feedReplyInput {
+  flex: 1 1 0;
+  height: 100%;
+  padding-left: 10px;
+} 
+#feedReplyInput::placeholder {
+  color: #aaa;
+  font-weight: 700;
+}
+.feed-form-submit {
+  color: #50adf4;
+  font-weight: 700;
+  cursor: pointer;
+  padding: 10px;
+}
+.feed-loading {
+  font-weight: 700;
+  text-align: center;
+  padding-bottom: 20px;
+}
+
+/* mobile version */
+@media screen and (max-width: 480px) {
+  .feed {
+    max-width: 474px;
+    margin-bottom: 30px;
+  }
+  .feed-content-info-bottom {
+    font-size: 13px;
+  }
+  .reply-content {
+    font-size: 12px;
+  }
+  .feed-form-submit {
+    font-size: 12px;
+  }
+}
