@@ -6,8 +6,8 @@ import Main from './components/Main/Main';
 function App() {
   return (
     <Routes>
-      <Route path={process.env.PUBLIC_URL + '/'} element={<Login />} />
-      <Route path={process.env.PUBLIC_URL + '/home'} element={<Main />} />
+      <Route path="/" element={<Login />} />
+      <Route path="/home" element={<Main />} />
     </Routes>
   );
 }
